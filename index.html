@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="top">
+            <img src="./images/logo.svg" class="logo">
+
+            <div class="search">
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text" placeholder="Search products here"><button id="search">Search</button>
+            </div>
+            <span class="user">
+                <button id="cart"><ion-icon name="cart-outline"></ion-icon></button>
+                <img src="./images/image-avatar.png" class="avatar">
+            </span>
+           
+        </div>
+        <nav class="nav">
+            <span class="categories">
+        
+                <a href="#">Collections</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">About</a>
+                <a href="$">Contact</a>
+            </span>
+            
+        </nav>
+    </header>
+    <main class="main">
+        <section class="featured">
+            <article class="item">
+                <div class="productImg">
+                    <img src="./images/image-product-1.jpg" id="featImage">
+                    <div class="thumbnails">
+                        <img class="featActive" src="./images/image-product-1-thumbnail.jpg"><img src="./images/image-product-2-thumbnail.jpg"><img src="./images/image-product-3-thumbnail.jpg"><img src="./images/image-product-4-thumbnail.jpg">
+                    </div>
+                </div>
+                <form class="productInfo">
+                    <span class="brand">
+                        Sneaker Company
+                    </span>
+                    <h2>
+  Fall Limited Edition Sneakers
+
+                    </h2>
+                    
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                        durable rubber outer sole, they’ll withstand everything the weather can offer.
+                      </p>
+                    <div class="prices">
+                        <span class="price">$250.00</span>
+                        <span class="discount">50%</span>
+                        <span class="oldprice">$250.00</span>
+                    </div>
+
+                    <div class="cart">
+                        <span class="inputwheel">
+                            <button class="itemDecrease" onclick="totalItems.innerHTML += 1;">-</button>
+                            <p id="totalItems">0</p>
+                            <button class="itemIncrease" onclick="increaseItem()">+</button></span>
+                        <button id="addtoCart"><ion-icon name="cart-outline"></ion-icon> Add to Cart</button>
+                    </div>
+                </form>
+            </article>
+            <div class="swipe-indicator">
+                <span class="swipe-indicator-active"></span><span></span><span></span><span></span>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
